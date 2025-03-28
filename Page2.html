@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer Selection</title>
+    <link rel="stylesheet" href="styleMain.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Select Timer Duration</h1>
+        <div class="button-container">
+            <button onclick="setTimer(15)">15 min</button>
+            <button onclick="setTimer(20)">20 min</button>
+            <button onclick="setTimer(30)">30 min</button>
+            <button onclick="setTimer(45)">45 min</button>
+            <button onclick="setTimer(60)">60 min</button>
+            <button onclick="customTimer()">Custom</button>
+        </div>
+    </div>
+
+    <script>
+        function setTimer(minutes) {
+            localStorage.setItem("timerDuration", minutes);
+            window.location.href = "interaction.html";
+        }
+
+        function customTimer() {
+            let customTime = prompt("Enter custom time in minutes:");
+            if (customTime && !isNaN(customTime) && customTime > 0) {
+                setTimer(customTime);
+            } else {
+                alert("Please enter a valid number.");
+            }
+        }
+    </script>
+</body>
+</html>
