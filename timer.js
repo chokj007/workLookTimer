@@ -140,9 +140,6 @@ function attractParticlesAroundFace(centerX, centerY) {
 }
 
 
-
-
-
 // function attractParticlesConstant() {
 //     if (particles.length >= maxParticles) return;
 
@@ -239,7 +236,7 @@ function stopTimer() {
     timerEnded = false;
     allowParticles = false;
     restartButton.style("display", "none");
-    particles = []; // Optional: clear particles when stopped
+    particles = []; 
 }
 
 
