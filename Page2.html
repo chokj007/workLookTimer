@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timer Selection</title>
+    <title>Time Selection</title>
     <link rel="stylesheet" href="styleMain.css">
 </head>
 <body>
+
+    <button id="home" onclick="goHome()">Back</button>
+    
     <div class="container">
         <h1>Select Timer Duration</h1>
         <div class="button-container">
@@ -22,7 +25,7 @@
     <script>
         function setTimer(minutes) {
             localStorage.setItem("timerDuration", minutes);
-            window.location.href = "interaction.html";
+            window.location.href = "timer.html";
         }
 
         function customTimer() {
@@ -33,6 +36,12 @@
                 alert("Please enter a valid number.");
             }
         }
+
+        function goHome() {
+            window.location.href = "index.html"; 
+        }
+        
+
     </script>
 </body>
 </html>

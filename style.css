@@ -1,5 +1,22 @@
+
+@font-face {
+  font-family: 'Abelard-Medium'; 
+  src: url('Abelard-Medium.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Abelard-Italic'; 
+  src: url('/Users/jaynachoksi/Documents/Parsons /Year 4/Eight SEM!! /THESIS/workLookTimer/Fonts/Abelard-Italic copy.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Abelard-Light';
+  src: url('Abelard-Light.otf') format('opentype');
+}
+
 * {
-font-family: 'Abelard-Light', sans-serif;
+  font-family: 'Abelard-Light', sans-serif;
+  box-sizing: border-box;
 }
 
 body, html {
@@ -50,20 +67,56 @@ body, html {
     text-decoration: none;
   }
   
+  .button:hover {
+    background-color: black;
+    color: white;
+    /* transition: opacity 0.3s ease */
+  }
+
   #about-link {
     position: absolute;
-    bottom: 1rem;
+    top: 2rem;
     right: 1rem;
-    font-size: 1rem;
+    font-size: 1.3rem;
     color: black;
     font-weight: bold;
     cursor: pointer;
+    text-decoration: none ;
+  }
+
+  #about-link:hover { 
+    color: rgb(241, 240, 240)
   }
   
   canvas {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1; /* Behind overlay */
+    z-index: 0; 
   }
   
+  .para { 
+    margin: 1em 2em; 
+    margin-right: 3em
+  }
+
+  h2{ 
+    font-size: 4rem;
+    margin:0;
+    margin-left: 0.5em; 
+    margin-top: 0.5em; 
+    color: black;
+    /* text-align: center; */
+  }
+
+#bold { 
+  font-family: 'Abelard-Medium', sans-serif;
+}
+
+#italic { 
+  font-family: 'Abelard-Italic', sans-serif;
+}
+
+.video-section {
+  height: 33.3333vh;
+}

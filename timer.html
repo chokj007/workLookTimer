@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOOP Timer</title>
+    <link rel="stylesheet" href="styleMain.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.12.2/dist/ml5.min.js"></script>
+</head>
+<body>
+       <button id="home" onclick="goHome()">Home</button>
+       <button id="Fullscreen" onclick="toggleFullscreen()">Fullscreen</button>
+       <button id="restart" onclick="restart()">Restart</button>
+   
+       <div id="timer">Loading...</div>
+   
+
+       <div id="controls">
+           <button onclick="playTimer()">Play</button>
+           <button onclick="pauseTimer()">Pause</button>
+           <button onclick="stopTimer()">Stop</button>
+       </div>
+
+       <div id="color-buttons">
+        <button id="black-btn">⚫ Black</button>
+        <button id="white-btn">⚪ White</button>
+        </div>
+       
+       
+
+       <audio id="sound" src="victorySound.mp3" preload="auto"></audio>
+
+
+    <script src="timer.js"></script>
+</body>
+</html>
