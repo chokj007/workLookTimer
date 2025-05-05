@@ -1,0 +1,81 @@
+@media only screen and (max-width: 767px) {
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+  
+    .button-container {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .button {
+      width: 100%;
+      font-size: 1rem;
+    }
+  
+    #about-link {
+      font-size: 1rem;
+      top: 1rem;
+      right: 1rem;
+    }
+  
+    h2 {
+      font-size: 2rem;
+      margin-left: 1rem;
+      margin-top: 1rem;
+    }
+  
+    .para {
+      margin: 1em;
+    }
+  
+    #home {
+      top: 10px;
+      left: 10px;
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  }
+
+  
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 4rem;
+    }
+  
+    .button-container {
+      flex-direction: row;
+      gap: 1.5rem;
+    }
+  
+    .button {
+      font-size: 1.1rem;
+      padding: 0.5rem 1rem;
+    }
+  
+    #about-link {
+      font-size: 1.1rem;
+      top: 1.5rem;
+      right: 1.5rem;
+    }
+  
+    h2 {
+      font-size: 3rem;
+      margin-left: 1.5rem;
+      margin-top: 1.5rem;
+    }
+  
+    .para {
+      margin: 1em 2em;
+    }
+  
+    #home {
+      top: 15px;
+      left: 15px;
+      padding: 9px 18px;
+      font-size: 15px;
+    }
+  }
+  

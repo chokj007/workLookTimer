@@ -22,8 +22,7 @@ let particleColor = 'black';
 function setup() {
     canvas = createCanvas(windowWidth, windowHeight);
     video = createCapture(VIDEO);
-    video.hide(); // Hide DOM element, we'll draw it manually
-
+    video.hide(); 
     poseNet = ml5.poseNet(video, modelLoaded);
     poseNet.on('pose', results => poses = results);
 
